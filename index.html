@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/ONE/Challenger/CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="shortcut icon" href="./Image/Vector.svg" type="image/x-icon">
+        <title>Codififador</title>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="./Image/Vector.svg" alt="logo da Alura">
+                <!-- <h1>Decodificador Alura</h1> -->
+        </header>
+
+        <main>
+            <section>
+                <textarea class="txtArea" cols="40" rows="10" placeholder="Digite seu texto"></textarea>
+                
+                <div class="info">
+                    <img src="./Image/atencao.svg" alt="ponto de exclamação">
+                    <p>Digite apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="botoes">
+                    <button class="bt-criptografar" onclick="criptografar()"><span>Criptografar</span></button>
+                    <button class="bt-descriptografar" onclick="descriptografar()"><span>Descriptografar</span></button>
+                </div>
+            </section>
+
+            <div class="boxLateral">
+                <img src="image/imagemLupa.svg" alt="Garoto segurando uma lupa" id="lupa">
+                
+                <h2 id="none">Nenhuma mensagem encontrada</h2>
+                <textarea class="mensagem" cols="20"   placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+                
+                <h3 id="msg"></h3>
+                <div id="copiar"></div>
+            </div>
+        </main>
+
+        <div class="footer">
+            <div class="icons">
+                <a target="_blank" href="http://www.linkedin.com/in/fabiojccruz/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a target="_blank" href="https://github.com/CruzFabio"><ion-icon name="logo-github"></ion-icon></a>
+                <h6>Desenvolvido por Fabio Cruz</h6>
+            </div>
+
+            
+
+        </div>
+
+            <script src="JS/script.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>

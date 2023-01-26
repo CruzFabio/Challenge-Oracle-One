@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --corbg:#F3F5FC;  
+    --colortext: #0A3871;
+}
+
+body {
+    background: var(--corbg);
+}
+
+main {
+    background-color: var(--corbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.logo {
+    width: 2rem;
+    padding: 40px;
+}
+
+.txtArea {
+    color: var(--colortext);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+    margin: 40px 0 0 0;
+    font-size: 32px;
+}
+
+::placeholder {color: #0A3871}
+    .txtArea:focus {
+        outline: none;
+    }
+
+.boxLateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 32px;
+    /* box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); */
+
+}
+
+.mensagem {
+    /* background: white; */
+    border: none;
+    color: #0A3871;
+    text-transform:lowercase;
+    resize: none;
+    background: transparent;
+    font-size: 20px;
+    width: 85%;
+    height: 70%;
+} 
+
+.mensagem::placeholder {
+color: #0A3871;
+font-size: 20px;
+text-align: center;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+#lupa {
+position: relative;
+width: 300px;
+margin: 29px 0;
+}
+
+#none {
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+}
+
+#msg {
+    position: relative;
+    padding: 20px;
+    color: #0A3871;
+    font-size: 18px;
+}
+.info {
+    display: flex;
+    margin: 20px;
+}
+
+.info p {
+    font-size: 12px;
+    color: #495057;
+    margin: 0 0 0 5px;
+}
+
+/*inicio criptografia*/
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.bt-criptografar {
+    color: #FFFF;
+    background: var(--colortext);
+    border: 1px solid #0A3871;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+    box-shadow: 1px 4px 2px  rgba(0, 0, 0, 0.1);
+    background: rgba(10, 56, 113,1);
+    transition: all 0.3s ease;
+}
+
+.bt-descriptografar {
+    color: #0A3871;
+    background: var(--corbg);
+    border: 1px solid #0A3871;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+    box-shadow: 1px 4px 2px  rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    /* codigo site */
+    /* background: rgb(0,172,238); */
+    /* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
+    /* line-height: 42px; */
+}
+
+.bt-copiar {
+    border: 1px solid #0A3871;
+    background: transparent;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 1rem;
+    box-shadow: 1px 4px 2px  rgba(0, 0, 0, 0.1);
+}
+
+/*animacao botoes*/
+.bt-criptografar:hover{
+    color: rgba(10, 56, 113, 1);
+}
+
+.botoes button:hover {
+    border: 1px solid rgba(10, 56, 113, 0.5);
+    font-size: 20px;
+    background: transparent;
+    box-shadow: none;
+    background: rgb(10, 56, 113, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bt-copiar:hover {
+    border: 1px solid rgba(10, 56, 113, 0.5);
+    font-size: 20px;
+    background: transparent;
+    box-shadow: none;
+    background: rgb(10, 56, 113, 0.1);
+    transition: all 0.3s ease;    
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-size: 1rem;
+    background: var(--colortext);
+    color: var(--corbg);
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--corbg);
+
+}
+
+.icons ion-icon:hover {
+    color: yellowgreen;
+}
+
+h6 {
+    text-align: center;
+}
